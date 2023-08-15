@@ -1,0 +1,732 @@
+/* UTILITIES */
+/* Utility styles for global resets and default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font styling for the body */
+body {
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+}
+
+/* Remove default list styles */
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+/* Styling for the main navigation bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Styling for navigation links */
+.nav-links a {
+  color: #6a6a6a;
+}
+.nav-links a:hover {
+  color: rgb(255, 166, 0);
+}
+
+/* LOGO */
+/* Styling for the logo */
+.logo {
+  font-size: 32px;
+}
+
+/* Styling for the logo in the header */
+.header-logo-css {
+  color: #000000;
+}
+
+/* NAVBAR MENU */
+/* Styling for the navigation menu */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  color: lightgray;
+}
+
+/* Styling for menu items on hover */
+.menu li:hover {
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* Styling for menu items */
+.menu li {
+  padding: 5px 14px;
+  color: lightgray;
+}
+
+/* DROPDOWN MENU */
+/* Styling for dropdown menus */
+.services {
+  position: relative;
+}
+
+/* Styling for dropdown menu items */
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+/* Styling for dropdown menu items on hover */
+.dropdown li:hover {
+  background-color: #ffffff;
+}
+
+/* Displaying dropdown on hover */
+.services:hover .dropdown {
+  display: block;
+}
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+/* Styling for hidden checkbox used for mobile menu */
+input[type=checkbox] {
+  display: none;
+}
+
+/* HAMBURGER MENU */
+/* Styling for the hamburger menu icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1001; /* Ensure it's above the menu */
+}
+
+/* APPLYING MEDIA QUERIES */
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  /* Hide the menu by default */
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    right: 0;
+    text-align: center;
+    padding: 16px 0;
+    padding-top: 50px;
+    height: 100%;
+    line-height: 44px;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  /* Styling for menu items on hover */
+  .menu li:hover {
+    display: inline-block;
+    background-color:#ffffff;
+    transition: 0.3s ease;
+    color: #7d7d7d;
+  }
+  
+  /* Show the menu when checkbox is checked */
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  /* Show the checkbox */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Styling for the hamburger icon */
+  .hamburger {
+    display: block;
+    color: #ff8c00;
+  }
+}
+
+/* Additional styles for the contact-us-button */
+.contact-us-button {
+  background: transparent;
+  border-radius: 8px;
+  color: #ff6500;
+  border: 2px solid #ff6500;
+  font-size: large;
+  padding: 10px;
+}
+
+/* Styling for the contact-us-button on hover */
+.contact-us-button:hover {
+  background: rgba(255, 255, 255, 0.482);
+  border-radius: 8px;
+  color: #ff6500;
+  border: 2px solid #ff6500;
+  font-size: large;
+  padding: 10px;
+}
+
+/* Header section styling */
+.header {
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/14/09/32/home-garden-2401640_1280.jpg") ;
+  display: block;
+  padding: 4%;
+  text-align: center;
+  color: rgb(17, 24, 39);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  align-items: center;
+  height: 700px;
+  padding-top: 9.5rem;
+  overflow-wrap: normal;
+}
+
+/* Tagline styling */
+.tagline-p1 {
+  font-size: 4.5rem;
+  background-color: #ffffffad;
+}
+
+/* Tagline styling */
+.tagline-p2 {
+  font-size: 2.5rem;
+  background-color: #ffffffad;
+}
+
+/* Contact Us section header styling */
+.contact-us-header {
+  background-color: #ffffff00;
+  padding-bottom: 20px;
+  font-weight: bolder;
+  background-color: #ffffffad;
+}
+
+/* Review section styling */
+.Review {
+  display: block;
+  margin-top: 4.5rem;
+  text-align: center;
+  color: rgb(17, 24, 39);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+  display: block;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0);
+  padding: 4rem;
+}
+
+/* Selling Places Section */
+.selling-buying-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the selling container */
+.selling-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin-top: 2rem;
+  align-self: center;
+  text-align: center;
+}
+
+/* Styling for selling place */
+.selling-place {
+  flex-basis: calc(33.33% - 2rem);
+  background-color: #ffffff00;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for selling place image */
+.selling-place img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Styling for selling place title */
+.selling-place h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Styling for selling place link */
+.selling-place a {
+  display: inline-block;
+  background-color: #ff6500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for selling place link on hover */
+.selling-place a:hover {
+  background-color: #ff8c00;
+}
+
+/* Styling for the Buy button on hover */
+.btn-buy :hover {
+  color: #ff6500;
+  border-radius: 50px;
+}
+
+/* Styling for the Title of Selling Places section */
+.Title-selling-places {
+  font-size: 2.5rem;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust the flex-basis for selling place items */
+  .selling-place {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+/* Our Team Section */
+/* Styling for the Our Team section */
+.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+  padding: 4rem 0;
+  background: linear-gradient(to bottom, #f9f9f900, #f3e5e55a);
+  text-align: center;
+}
+
+/* Styling for Our Team section heading */
+.our-team-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Styling for Our Team section content */
+.our-team-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Styling for Our Team section paragraph */
+.our-team p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Styling for Our Team section image container */
+.our-team-image {
+  text-align: center;
+}
+
+/* Styling for Our Team section image */
+.our-team-image img {
+  max-width: 45%;
+  max-height: 15%;
+  object-fit: cover;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 769px) {
+  /* Adjust flex properties for Our Team section */
+  .our-team {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  /* Adjust heading alignment for larger screens */
+  .our-team-heading {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  /* Adjust content alignment for larger screens */
+  .our-team-content {
+    flex: 1;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  /* Adjust image container for larger screens */
+  .our-team-image {
+    margin-top: 0;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Adjust image properties for larger screens */
+  .our-team-image img {
+    width: 40%;
+    border-radius: 0;
+    padding: 25px;
+  }
+}
+
+/* Success Stats Section */
+/* Styling for the Success Stats section */
+.success-stats {
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* Styling for the Success Stats container */
+.success-stats .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for success stats items */
+.success-item {
+  flex-basis: calc(33.33% - 2rem);
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for success stats item image */
+.success-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Styling for success stats item title */
+.success-item h3 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+/* Import Google Fonts for Contact Us section */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+/* Contact Us section */
+/* Styling for the contact us section */
+.contact-us-section {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Styling for the contact us section on body */
+body .contact-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+
+/* Styling for the contact us container */
+.container .contact-us-section {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  min-width: 370px;
+}
+
+/* Styling for contact us section heading */
+.contact-us-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+/* Styling for the form container */
+.contact-us-section .form-container {
+  display: flex;
+  padding: auto;
+}
+
+/* Styling for the left container */
+.contact-us-section .left-container {
+  flex: 1;
+  height: 480px;
+  background-color: rgb(226, 191, 191);
+  padding-top: 4rem;
+  padding-left: 1.5rem;
+}
+
+/* Styling for the right container */
+.contact-us-section .right-container {
+  display: flex;
+  flex: 1;
+  height: 460px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the right inner container */
+.contact-us-section .right-inner-container {
+  width: 70%;
+  height: 80%;
+  text-align: center;
+}
+
+/* Styling for the left inner container */
+.contact-us-section .left-inner-container {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+  color: #000000;
+}
+
+/* Styling for input and textarea */
+.contact-us-section input,
+.contact-us-section textarea {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+/* Styling for input and textarea on focus */
+.contact-us-section input:focus,
+.contact-us-section textarea:focus {
+  outline: 1px solid teal;
+}
+
+/* Styling for the submit button */
+.contact-us-section button {
+  border-radius: 20px;
+  border: 1px solid #00b4cf;
+  background-color: #00b4cf;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+/* Styling for the submit button on hover */
+.contact-us-section button:hover {
+  opacity: 0.7;
+}
+
+/* Responsive styling for smaller screens */
+@media only screen and (max-width: 600px) {
+  /* Hide left container and large view content */
+  .contact-us-section .left-container {
+    display: none;
+  }
+  .contact-us-section .lg-view {
+    display: none;
+  }
+}
+
+/* Responsive styling for larger screens */
+@media only screen and (min-width: 600px) {
+  /* Hide small view content */
+  .contact-us-section .sm-view {
+    display: none;
+  }
+}
+
+/* Styling for contact us form paragraphs */
+.contact-us-section form p {
+  text-align: left;
+}
+
+/* Styling for the company location container */
+.company-location-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* Styling for the company location map */
+.company-location-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the company location text */
+.company-location-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 80%;
+}
+
+/* Company Location Section */
+.company-location-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  overflow: visible; /* Set to visible to allow both map and footer to be visible */
+}
+
+.company-location-map {
+  position: relative; /* Change to relative positioning */
+  width: 100%;
+  height: 500px; /* Adjust the height as needed */
+  border: none;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .company-location-text {
+    font-size: 14px;
+    max-width: 90%;
+  }
+}
+
+/* Footer Section */
+.footer {
+  background: url("https://media.giphy.com/media/l0IylQoMkcbZUbtKw/giphy.gif") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: larger;
+  height: 300px; /* Adjust the height as needed */
+  line-height: 3.5rem;
+  margin-top: auto;
+  position: relative; /* Add position */
+  background-color: #0707075b;
+  padding-top: 9.5rem;
+}
+
+.footer a {
+  background: transparent;
+  border-radius: 8px;
+  color: #ff0000;
+  font-size: large;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-logo {
+  font-size: 24px;
+  margin-right: 0px;
+/* Add margin to separate logo and text */
+}
+
+/* Styling for the contact-us-button in the footer */
+.contact-us-button-footer {
+  background: transparent;
+  border-radius: 8px;
+  color: #ff6500;
+  border: 2px solid #ff6500;
+  font-size: large;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Styling for the contact-us-button on hover in the footer */
+.contact-us-button-footer:hover {
+  background: rgba(142, 126, 126, 0.482);
+  color: orange;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Styling for the footer rights and credits */
+.footer-rights {
+  font-size: 14px;
+  color: #888;
+  text-align: left;
+}
+
+.footer-credits {
+  font-size: 12px;
+  color: #888;
+  text-align: left;
+}

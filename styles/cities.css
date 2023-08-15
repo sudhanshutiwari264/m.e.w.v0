@@ -1,0 +1,223 @@
+/* NAVIGATION BAR STYLING */
+/* Styling for the main navigation bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+body {
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Styling for navigation links */
+.nav-links a {
+  color: #6a6a6a;
+}
+.nav-links a:hover {
+  color: rgb(255, 166, 0);
+}
+
+/* LOGO */
+/* Styling for the logo */
+.logo {
+  font-size: 32px;
+}
+
+/* Styling for the logo in the header */
+.header-logo-css {
+  color: #000000;
+}
+
+/* HAMBURGER MENU */
+/* Styling for the hamburger menu icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1001; /* Ensure it's above the menu */
+}
+
+/* APPLYING MEDIA QUERIES */
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  /* Hide the menu by default */
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    right: 0;
+    text-align: center;
+    padding: 16px 0;
+    padding-top: 50px;
+    height: 100%;
+    line-height: 44px;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  /* Styling for menu items on hover */
+  .menu li:hover {
+    display: inline-block;
+    background-color:#ffffff;
+    transition: 0.3s ease;
+    color: #7d7d7d;
+  }
+
+  /* Show the menu when checkbox is checked */
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  /* Show the checkbox */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Styling for the hamburger icon */
+  .hamburger {
+    display: block;
+    color: #ff8c00;
+  }
+}
+
+/* Additional styles for the contact-us-button */
+.contact-us-button {
+  background: transparent;
+  border-radius: 8px;
+  color: #ff6500;
+  border: 2px solid #ff6500;
+  font-size: large;
+  padding: 10px;
+}
+
+/* Styling for the contact-us-button on hover */
+.contact-us-button:hover {
+  background: rgba(255, 255, 255, 0.482);
+  border-radius: 8px;
+  color: #ff6500;
+  border: 2px solid #ff6500;
+  font-size: large;
+  padding: 10px;
+}
+
+/* FOOTER STYLING */
+/* Styling for the footer */
+.footer {
+  background: url("https://media.giphy.com/media/l0IylQoMkcbZUbtKw/giphy.gif") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: larger;
+  height: 300px; /* Adjust the height as needed */
+  line-height: 3.5rem;
+  margin-top: auto;
+  position: relative; /* Add position */
+  background-color: #0707075b;
+  padding-top: 9.5rem;
+}
+
+/* Styling for footer links */
+.footer a {
+  background: transparent;
+  border-radius: 8px;
+  color: #ff0000;
+  font-size: large;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Styling for the contact-us-button in the footer */
+.contact-us-button-footer {
+  background: transparent;
+  border-radius: 8px;
+  color: #ff6500;
+  border: 2px solid #ff6500;
+  font-size: large;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Styling for the contact-us-button on hover in the footer */
+.contact-us-button-footer:hover {
+  background: rgba(142, 126, 126, 0.482);
+  color: orange;
+}
+
+/* Styling for the images within the options */
+.option-image {
+  display: block;
+  width: 120px; /* Adjust the width as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Styling for the new container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  width: 100%;
+  position: relative;
+}
+
+/* Styling for the options */
+.options {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the options links */
+.options a {
+  display: inline-block;
+  margin: 0 15px;
+  color: #ff8c00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Styling for the image container */
+.image-container {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Responsive styling for the image container */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .options {
+    margin-bottom: 15px;
+  }
+
+  .options a {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
