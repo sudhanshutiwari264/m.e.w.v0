@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.boxicons.com/2.0.7/css/boxicons.min.css">
     <link href="styles/index.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- Document Title -->
     <title>M.E.W. IMMOBILIEN </title>
@@ -32,10 +33,12 @@
   
         <!-- NAVIGATION MENUS -->
         <div class="menu">  
-          <li><a href="#places">Referenzprojekte</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#about"> über uns</a></li>
+          <li><a href="#places">Referenzprojekte</a></li>
+          <li><a href="#about">Dienstleistungen</a></li>
           <li><a href="impressum.html">Impressum</a></li>
-          <li><a class="contact-us-button" href="#contact-us">Kontakt</a></li>
+          <li><a class="contact-us-button" href="#contact-us">Kontakt uns</a></li>
         </div>
       </ul>
     </nav>
@@ -82,7 +85,7 @@
     </div>
     <!-- Unser Team kennenlernen Section -->
     <div id="about" class="our-team">
-      <div class="our-team-content">
+      <div class="our-team-content" style="font-size: 40px;">
         <h2>Über uns</h2>
         <p>
           Bei M.E.W. REAL ESTATE, wir sind ein führendes Immobilienunternehmen, das sich auf den Kauf, Verkauf und die Vermietung von Immobilien in Deutschland spezialisiert hat. Mit einer starken Präsenz in vier pulsierenden Städten – Berlin, Hamburg, Bremen und Rostock – sind wir bestrebt, unseren Kunden außergewöhnliche Immobiliendienstleistungen zu bieten.
@@ -94,7 +97,7 @@
           Kontaktieren Sie uns noch heute, um den außergewöhnlichen Service und die Fachkompetenz zu erleben, die M.E.W ausmachen. IMMOBILIEN auseinander.
         </p>
       </div>
-         <div class="our-team-image">
+         <div class="our-team-image" >
          <img src="images/team.jpg" alt="Our Team">
          </div>         
     </div>
@@ -118,42 +121,35 @@
       </div>
     </div>      
   </div>
-  <div id="contact-us" class="contact-us-section">
-    <div class="container">
-      <div class="form-container">
-        <div class="left-container">
-          <div class="left-inner-container">
-            <h2>Kontaktieren Sie uns</h2>
-            <p>Nehmen Sie über das untenstehende Kontaktformular mit uns Kontakt auf. Wir freuen uns darauf, von Ihnen zu hören und Ihnen bei Ihren Immobilienbedürfnissen zu helfen.</p>
-            <p>Call us 
-              <br>At <strong>0176-47144861</strong>
-              <br>
-              or Mail us at <strong>marc.walczak@pm.me</strong>und at <strong>m.walczak@mewimmobilien.com</strong></p>
-          </div>
+  <!-- Contact Us Section -->
+  <div id="contact-us" class="bg-gray-100 bg-opacity-50 py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-md text-center md:text-left">
+          <h2 class="text-2xl font-semibold mb-4">Kontaktiere uns</h2>
+          <p>Kontaktieren Sie uns über das untenstehende Formular. Wir freuen uns darauf, von Ihnen zu hören und Sie bei Ihren Immobilienbedürfnissen zu unterstützen.</p>
+          <p>Ruf uns an um <strong>0176-47144861</strong><br>or Mailen Sie uns an <strong>marc.walczak@pm.me</strong></p>
         </div>
-        <div class="right-container">
-          <div class="right-inner-container">
-            <form class="form-box" id="contactform" action="https://formsubmit.co/sudhanshutiwari264@gmail.com" method="POST">
-              <h2 class="lg-view">Kontakt</h2>
-              <p>* Required</p>
-              <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-              <input type="text" name="name" placeholder="Name *" required />
-              <input type="email" name="email" placeholder="Email *" required />
-              <input type="tel" name="phone" placeholder="Phone" />
-              <textarea name="message" rows="4" placeholder="Message"></textarea>
-              <p>
-                Wir werden diese Informationen nur zur Kontaktaufnahme mit Ihnen verwenden. Nähere Einzelheiten entnehmen Sie bitte dem<a href="impressum.html">Impressum.</a>.</p>
-              <button type="submit">Senden</button>
-            </form>
-          </div>
+        <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-md">
+          <form class="space-y-4" id="contactform" action="https://formsubmit.co/sudhanshutiwari264@gmail.com" method="POST">
+            <h2 class="text-2xl font-semibold mb-2">Contact</h2>
+            <p class="text-sm text-gray-500">* Required</p>
+            <div class="space-y-2">
+              <input type="hidden" name="_next" value="https://sudhanshutiwari264.github.io/m.e.w.v0">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" name="name" placeholder="Name *" required class="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-300">
+              <input type="email" name="email" placeholder="Email *" required class="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-300">
+              <input type="tel" name="phone" placeholder="Phone" class="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-300">
+              <textarea name="message" rows="4" placeholder="Message" class="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-300"></textarea>
+            </div>
+            <p class="text-sm text-gray-500">We will only use this information to contact you. For more details, see our <a href="../../impressum.html">Impressum</a>.</p>
+            <button type="submit" class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300">Send</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
+
   <div class="company-location-container">
     <div class="company-location-map">
       <div style="padding: 1.5rem;">
