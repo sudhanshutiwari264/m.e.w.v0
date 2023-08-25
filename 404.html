@@ -1,13 +1,16 @@
-<!-- 404.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found - M.E.W. Immobilien</title>
+    <title>Seite nicht gefunden - M.E.W. Immobilien</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Page Not Found</h1>
-    <p>The requested page could not be found on the M.E.W. Immobilien website.</p>
+<body class="bg-gray-100 flex flex-col justify-center items-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+        <h1 class="text-3xl font-semibold mb-4">Oops, Seite nicht gefunden</h1>
+        <p class="text-gray-600">Die angeforderte Seite konnte auf der M.E.W. Immobilien-Website nicht gefunden werden.</p>
+        <a href="/" class="mt-4 text-blue-600 hover:underline">Zurück zur Startseite</a>
+    </div>
 </body>
 </html>
