@@ -1,0 +1,8 @@
+# Redirect www to non-www
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      permalink: "https://mewimmobilien.com/:path"
+
