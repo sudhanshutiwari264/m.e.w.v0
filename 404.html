@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seite nicht gefunden - M.E.W. Immobilien</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2f4f6;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 flex flex-col justify-center items-center h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-md text-center">
-        <h1 class="text-3xl font-semibold mb-4">Oops, Seite nicht gefunden</h1>
-        <p class="text-gray-600">Die angeforderte Seite konnte auf der M.E.W. Immobilien-Website nicht gefunden werden.</p>
-        <a href="index.html" class="mt-4 text-blue-600 hover:underline">Zurück zur Startseite</a>
+<body class="flex flex-col justify-center items-center min-h-screen">
+    <div class="bg-white p-12 rounded-lg shadow-md text-center">
+        <h1 class="text-3xl font-semibold mb-4 text-red-600">Oops, Seite nicht gefunden</h1>
+        <p class="text-gray-600 mb-6">Die angeforderte Seite konnte auf der M.E.W. Immobilien-Website nicht gefunden werden.</p>
+        <a href="index.html" class="text-blue-600 hover:underline">Zurück zur Startseite</a>
+    </div>
+    <div class="mt-8 text-gray-500 text-sm">
+        &copy; 2023 M.E.W. Immobilien. Alle Rechte vorbehalten.
     </div>
 </body>
 </html>
