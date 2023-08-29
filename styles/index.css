@@ -205,24 +205,6 @@ input[type=checkbox] {
   overflow-wrap: normal;
 }
 
-@media (max-width: 768px) {
-  .header {
-    padding:2%;
-    padding-bottom: 2%;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
-  /* Adjust the flex-basis for selling place items */
-  .tagline-p1 {
-    font-size: 3.5rem;
-    background-color: #ffffffad;
-  }
-  .tagline-p2 {
-    font-size: 2.5rem;
-    background-color: #ffffffad;
-  }
-}
-
 /* Tagline styling */
 .tagline-p1 {
   font-size: 3.5rem;
@@ -235,6 +217,15 @@ input[type=checkbox] {
   background-color: #ffffffad;
 }
 
+@media only screen and (max-width: 600px) {
+  .tagline-p1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline-p2 {
+    display: none;
+  }
+}
 /* Contact Us section header styling */
 .contact-us-header {
   background-color: #ffffff00;
@@ -246,7 +237,7 @@ input[type=checkbox] {
 /* Review section styling */
 .Review {
   display: block;
-  margin-top: 4.5rem;
+  margin-top: 3.5rem;
   text-align: center;
   color: rgb(17, 24, 39);
   font-size: 1.5rem;
