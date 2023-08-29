@@ -191,23 +191,39 @@ input[type=checkbox] {
 .header {
   background-image: url("https://cdn.pixabay.com/photo/2017/06/14/09/32/home-garden-2401640_1280.jpg") ;
   display: block;
+  padding: 4%;
   text-align: center;
   color: rgb(17, 24, 39);
-  font-size: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 400;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   display: block;
   align-items: center;
-  background-color: rgba(255, 0, 0, 0);
-  padding: 4rem;
+  height: 700px;
+  padding-top: 9.5rem;
+  overflow-wrap: normal;
 }
 
-
-
+@media (max-width: 768px) {
+  .header {
+    padding-top: 2%;
+    padding-bottom: 2% ;
+  }
+  /* Adjust the flex-basis for selling place items */
+  .tagline-p1 {
+    font-size: 3.5rem;
+    background-color: #ffffffad;
+  }
+  .tagline-p2 {
+    font-size: 1.5rem;
+    background-color: #ffffffad;
+  }
+}
 
 /* Tagline styling */
 .tagline-p1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   background-color: #ffffffad;
 }
 
