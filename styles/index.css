@@ -207,8 +207,10 @@ input[type=checkbox] {
 
 @media (max-width: 768px) {
   .header {
-    padding-top: 2%;
-    padding-bottom: 2% ;
+    padding:2%;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   /* Adjust the flex-basis for selling place items */
   .tagline-p1 {
@@ -216,7 +218,7 @@ input[type=checkbox] {
     background-color: #ffffffad;
   }
   .tagline-p2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     background-color: #ffffffad;
   }
 }
