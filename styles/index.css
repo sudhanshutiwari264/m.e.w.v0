@@ -191,19 +191,19 @@ input[type=checkbox] {
 .header {
   background-image: url("https://cdn.pixabay.com/photo/2017/06/14/09/32/home-garden-2401640_1280.jpg") ;
   display: block;
-  padding: 4%;
   text-align: center;
   color: rgb(17, 24, 39);
-  font-size: 3.5rem;
-  font-weight: 400;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   display: block;
   align-items: center;
-  height: 700px;
-  padding-top: 9.5rem;
-  overflow-wrap: normal;
+  background-color: rgba(255, 0, 0, 0);
+  padding: 4rem;
 }
+
+
+
 
 /* Tagline styling */
 .tagline-p1 {
