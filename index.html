@@ -97,31 +97,44 @@
       </div>
     </div>
     <!-- Selling Places Section -->
-    <div  id="places" class="selling-buying-frame">
-      <div class="Title-selling-places">Referenzprojekte</div>
-      <div class="selling-container">
+    <div id="places" class="bg-gray-100 py-8">
+      <div class="text-4xl font-semibold text-center mb-4">Referenzprojekte</div>
+      <div class="flex-container">
         <!-- Selling Place 1 -->
         <div class="selling-place">
-          <img src="images/berlin.jpg" alt="Berlin">
-          <h3>Berlin</h3>
-          <a href="references/Berlin/berlin.html" class="btn-buy">Mehr Informationen</a>
+          <div class="bg-white p-6 shadow-md rounded-md">
+            <div class="image-wrapper">
+              <img src="images/berlin.jpg" alt="Berlin">
+            </div>
+            <h3 class="text-lg font-semibold">Berlin</h3>
+            <a href="references/Berlin/berlin.html" class="btn-buy">Mehr Informationen</a>
+          </div>
         </div>
-
         <!-- Selling Place 2 -->
         <div class="selling-place">
-          <img src="images/Sachsen-logo.jpg" alt="Sachsen">
-          <h3>Sachsen-Anhalt</h3>
-          <a href="references/Sülzetal-Bahrendorf/Sulzetal-Bahrendorf.html" class="btn-buy ">Mehr Informationen</a>
+          <div class="bg-white p-6 shadow-md rounded-md">
+            <div class="image-wrapper">
+              <img src="images/Sachsen-logo.jpg" alt="Sachsen">
+            </div>
+            <h3 class="text-lg font-semibold">Sachsen-Anhalt</h3>
+            <a href="references/Sülzetal-Bahrendorf/Sulzetal-Bahrendorf.html" class="btn-buy">Mehr Informationen</a>
+          </div>
+        </div>
+        <!-- Selling Place 3 -->
+        <div class="selling-place">
+          <div class="bg-white p-6 shadow-md rounded-md">
+            <div class="image-wrapper">
+              <img src="images/dresden.jpg" alt="Dresden">
+            </div>
+            <h3 class="text-lg font-semibold">Dresden</h3>
+            <a href="references/Dresden/Dresden.html" class="btn-buy">Mehr Informationen</a>
+          </div>
         </div>
         <!-- Add more selling places as needed -->
-        <div class="selling-place">
-          <img src="images/dresden.jpg" alt="Rostock">
-          <h3>Dresden</h3>
-          <a href="references/Dresden/Dresden.html" class="btn-buy ">Mehr Informationen</a>
-        </div>
+
       </div>
     </div>
-
+  </div>
     <section class="bg-gray-100 py-16" id="service">
       <div class="container mx-auto">
         <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">unsere Dienstleistungen</h2>
@@ -218,13 +231,24 @@
     
     
   <!-- Contact Us Section -->
-  <div id="contact-us" class="bg-gray-100 bg-opacity-50 py-16">
+  <div id="contact-us" class="bg-gray-100 bg-opacity-50 py-16 bg-cover bg-no-repeat" style="background-image: url('./images/services.png');" >
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-md text-center md:text-left">
           <h2 class="text-2xl font-semibold mb-4">Kontaktieren Sie uns</h2>
           <p>Kontaktieren Sie uns über das untenstehende Formular. Wir freuen uns darauf, von Ihnen zu hören und Sie bei Ihren Immobilienbedürfnissen zu unterstützen.</p>
-          <p>Ruf uns an um <strong>0176-47144861</strong><br>or Mailen Sie uns an <strong>marc.walczak@pm.me</strong></p>
+          <p>
+            Ruf uns an um 
+            <strong><a href="tel:017647144861">0176-47144861</a></strong>
+            <br>or Mailen Sie uns an 
+            <strong>
+              <a href="mailto:m.walczak@mewimmobilien.com?subject='Kontact-us'" >m.walczak@mewimmobilien.com</a>  
+               <br /> 
+               und 
+               <a href="mailto:marc.walczak@pm.me?subject='Kontact-us'"> marc.walczak@pm.me</a>  
+                <br>
+            </strong>
+          </p>
         </div>
         <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-md">
           <form class="space-y-4" id="contactform" action="https://formsubmit.co/sudhanshutiwari264@gmail.com" method="POST">
