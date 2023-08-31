@@ -117,7 +117,7 @@ body {
 /* FOOTER STYLING */
 /* Styling for the footer */
 .footer {
-  background: url("https://media.giphy.com/media/l0IylQoMkcbZUbtKw/giphy.gif") center/cover no-repeat;
+  background: url("../images/footer\ graphic.png") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   text-align: center;
