@@ -8,6 +8,9 @@ Allow: /impressum.html
 Allow: /references/Berlin/berlin.html
 Allow: /references/Dresden/Dresden.html
 Allow: /references/S%C3%BClzetal-Bahrendorf/Sulzetal-Bahrendorf.html
+Allow: /service1.html
+Allow: /service2.html
+Allow: /service3.html
 
 User-agent: Bingbot
 Allow: /$
@@ -16,5 +19,8 @@ Allow: /impressum.html
 Allow: /references/Berlin/berlin.html
 Allow: /references/Dresden/Dresden.html
 Allow: /references/S%C3%BClzetal-Bahrendorf/Sulzetal-Bahrendorf.html
+Allow: /service1.html
+Allow: /service2.html
+Allow: /service3.html
 
 Sitemap: https://www.mewimmobilien.com/sitemap.xml
